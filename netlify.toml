@@ -1,0 +1,12 @@
+[[plugins]]
+package = "netlify-plugin-csp-generator"
+
+  [plugins.inputs]
+  buildDir = "dist"
+
+  [plugins.inputs.policies]
+    defaultSrc = "'self'"
+    styleSrc = "'self' 'unsafe-inline' 'unsafe-hashes' fonts.googleapis.com"
+    fontSrc = "'self' fonts.gstatic.com"
+    connectSrc = "https://phonebook-backend.muhdfaiz.com/"
+    imgSrc = "'self' data:"

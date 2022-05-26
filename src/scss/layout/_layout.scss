@@ -1,0 +1,10 @@
+#wrapper {
+    padding-left: 0;
+    transition: all 0.5s ease;
+    position: relative;
+
+    &.toggled #content-wrapper {
+        position: absolute;
+        margin-right: -250px;
+    }
+}
